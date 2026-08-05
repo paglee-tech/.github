@@ -79,13 +79,14 @@ Rebase merge is disabled. The choice between squash and merge commit is a
 convention: branch protection requires a paid plan, so nothing enforces it
 mechanically today.
 
-**Never write `Closes #` on a `release/*` pull request.** Merging one moves
-every linked item back to `Test`, undoing the `Ready to Deploy` status the
-release was cut from. Release pull requests reference issues without closing
-keywords.
+The board does not move cards for you past `Backlog`. Update `Status` on the
+project board as the work moves — in particular to `Test` once the pull
+request is merged into `develop`, and to `Ready to Deploy` once it has been
+validated.
 
-After merging a `hotfix/*`, move its item to `Done` by hand — the automation
-sets it to `Test`, which is wrong for a fix that is already in production.
+**Never write `Closes #` on a `release/*` pull request.** It carries dozens of
+issues, not one, and closing keywords there confuse both the board and the
+issue history. Reference them without keywords.
 
 Allowed types: `feat`, `fix`, `chore`, `docs`, `refactor`, `test`, `perf`,
 `build`, `ci`, `revert`.
