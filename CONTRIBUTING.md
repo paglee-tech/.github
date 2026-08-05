@@ -93,8 +93,10 @@ Allowed types: `feat`, `fix`, `chore`, `docs`, `refactor`, `test`, `perf`,
 
 ## Issues
 
-Issue Type (`Epic`, `Feature`, `Chore`, `Task`, `Bug`) and `Priority` are set
-in the issue sidebar — issue forms cannot set them automatically.
+The `Bug` and `Epic` forms set the Issue Type themselves and add the issue to
+the board. `Work item` covers `Feature`, `Chore` and `Task`, so its type is
+chosen in the sidebar. `Priority` is always set by hand — issue forms cannot
+write organization Issue Field values.
 
 Hierarchy uses native sub-issues:
 

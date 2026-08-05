@@ -1,11 +1,14 @@
 name: Epic
 description: Iniciativa grande, decomposta em Features, Chores e Tasks
+type: Epic
+projects:
+  - paglee-tech/1
 body:
   - type: markdown
     attributes:
       value: |
-        Após criar, defina o **Issue Type** como `Epic` e a **Priority** no
-        painel lateral, e vincule os work items como **sub-issues**.
+        Defina a **Priority** no painel lateral e vincule os work items como
+        **sub-issues** depois de criar.
 
   - type: textarea
     id: objective

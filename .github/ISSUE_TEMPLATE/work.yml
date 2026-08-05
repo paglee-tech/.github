@@ -1,11 +1,13 @@
 name: Work item
 description: Feature, Chore ou Task
+projects:
+  - paglee-tech/1
 body:
   - type: markdown
     attributes:
       value: |
-        Após criar, defina o **Issue Type** (Feature / Chore / Task) e a
-        **Priority** no painel lateral da issue.
+        Defina o **Issue Type** (Feature / Chore / Task) e a **Priority** no
+        painel lateral depois de criar.
 
   - type: textarea
     id: objective

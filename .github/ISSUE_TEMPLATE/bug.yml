@@ -1,11 +1,13 @@
 name: Bug
 description: Algo quebrado ou com comportamento inesperado
+type: Bug
+projects:
+  - paglee-tech/1
 body:
   - type: markdown
     attributes:
       value: |
-        Após criar, defina o **Issue Type** como `Bug` e a **Priority** no
-        painel lateral da issue.
+        Defina a **Priority** no painel lateral depois de criar.
 
   - type: textarea
     id: summary
