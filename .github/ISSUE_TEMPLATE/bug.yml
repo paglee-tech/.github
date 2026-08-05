@@ -1,0 +1,65 @@
+name: Bug
+description: Algo quebrado ou com comportamento inesperado
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Após criar, defina o **Issue Type** como `Bug` e a **Priority** no
+        painel lateral da issue.
+
+  - type: textarea
+    id: summary
+    attributes:
+      label: O que está acontecendo
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: Passos para reproduzir
+      value: |
+        1.
+        2.
+        3.
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: Comportamento esperado
+    validations:
+      required: true
+
+  - type: textarea
+    id: actual
+    attributes:
+      label: Comportamento observado
+      description: Inclua mensagens de erro, stack trace ou print.
+    validations:
+      required: true
+
+  - type: dropdown
+    id: environment
+    attributes:
+      label: Ambiente
+      options:
+        - Produção
+        - Homologação
+        - Desenvolvimento
+        - Local
+    validations:
+      required: true
+
+  - type: input
+    id: affected
+    attributes:
+      label: Versão / commit
+      description: Tag, release ou SHA em que o problema ocorre.
+
+  - type: textarea
+    id: impact
+    attributes:
+      label: Impacto
+      description: Quem é afetado e com que gravidade. Existe workaround?

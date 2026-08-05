@@ -1,0 +1,52 @@
+name: Work item
+description: Feature, Chore ou Task
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Após criar, defina o **Issue Type** (Feature / Chore / Task) e a
+        **Priority** no painel lateral da issue.
+
+  - type: textarea
+    id: objective
+    attributes:
+      label: Objetivo
+      description: O que precisa ser entregue, em uma ou duas frases.
+    validations:
+      required: true
+
+  - type: textarea
+    id: context
+    attributes:
+      label: Contexto
+      description: Por que isso é necessário agora. Links, decisões anteriores, dados.
+
+  - type: textarea
+    id: scope
+    attributes:
+      label: Escopo
+      description: O que está incluído. Use lista.
+      value: |
+        -
+    validations:
+      required: true
+
+  - type: textarea
+    id: out-of-scope
+    attributes:
+      label: Fora do escopo
+      description: O que deliberadamente não será feito aqui.
+
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: Critérios de aceite
+      description: Condições verificáveis para considerar concluído.
+      value: |
+        - [ ]
+
+  - type: textarea
+    id: dependencies
+    attributes:
+      label: Dependências
+      description: Issues, times ou sistemas que bloqueiam este trabalho.

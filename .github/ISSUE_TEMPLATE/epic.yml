@@ -1,0 +1,66 @@
+name: Epic
+description: Iniciativa grande, decomposta em Features, Chores e Tasks
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Após criar, defina o **Issue Type** como `Epic` e a **Priority** no
+        painel lateral, e vincule os work items como **sub-issues**.
+
+  - type: textarea
+    id: objective
+    attributes:
+      label: Objetivo
+      description: A iniciativa em uma ou duas frases.
+    validations:
+      required: true
+
+  - type: textarea
+    id: context
+    attributes:
+      label: Contexto
+      description: Situação atual e por que essa iniciativa existe.
+    validations:
+      required: true
+
+  - type: textarea
+    id: goals
+    attributes:
+      label: Objetivos da iniciativa
+      value: |
+        -
+
+  - type: textarea
+    id: scope
+    attributes:
+      label: Escopo
+      description: Grandes blocos de trabalho. Cada um vira uma sub-issue.
+      value: |
+        -
+    validations:
+      required: true
+
+  - type: textarea
+    id: out-of-scope
+    attributes:
+      label: Fora do escopo
+
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: Critérios de aceite
+      description: Como saber que a iniciativa terminou.
+      value: |
+        - [ ]
+
+  - type: textarea
+    id: risks
+    attributes:
+      label: Riscos
+      description: O que pode dar errado e qual a mitigação.
+
+  - type: textarea
+    id: outcome
+    attributes:
+      label: Resultado esperado
+      description: O estado do mundo depois que isso for entregue.
